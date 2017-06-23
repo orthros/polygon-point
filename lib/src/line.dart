@@ -11,7 +11,7 @@ class Line {
         intersect = p0.y - (_slope(p0, p1) * p0.x);
 
   static num _slope(Point p0, Point p1) {
-    return (p1.y - p0.y) / (p1.x - p1.x);
+    return (p1.y - p0.y) / (p1.x - p0.x);
   }
 
   num getY(num xValue) {
